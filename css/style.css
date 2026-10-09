@@ -50,3 +50,9 @@ h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:.6em}h3{font-size:1.6rem;margin-
 @media (max-width:760px){.burger{display:block}.nav{position:fixed;top:60px;left:0;right:0;flex-direction:column;background:var(--bg);padding:24px;gap:18px;transform:translateY(-130%);transition:.4s;box-shadow:0 20px 30px #0000000d}
 .open .nav{transform:none}.hero{align-items:flex-end;min-height:92vh}.hero::before{background:linear-gradient(0deg,var(--bg) 40%,#faf7f2aa 65%,#faf7f200 90%)}.hero-bg img{object-position:72% 20%}
 .sec{padding:80px 6vw}.grid12,.steps{grid-template-columns:1fr}.about-photo::after{inset:14px -10px -14px 14px}}
+.hero{isolation:isolate}.hero-bg{z-index:-2}
+.hero::before{background:linear-gradient(90deg,var(--bg) 0%,var(--bg) 30%,#faf7f2e6 42%,#faf7f200 62%)}
+.hdr{background:rgba(250,247,242,.6);backdrop-filter:blur(10px)}
+@media (max-width:760px){.hero{flex-direction:column;align-items:stretch;padding:0;min-height:auto}
+.hero-bg{position:relative;inset:auto;height:62vh;overflow:hidden}.hero-bg img{height:115%;object-position:72% 15%}
+.hero::before{display:none}.hero-in{padding:36px 6vw 50px;background:var(--bg);margin-top:-60px;border-radius:28px 28px 0 0;position:relative}}
